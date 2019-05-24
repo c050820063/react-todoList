@@ -1,26 +1,26 @@
 import React, { Fragment } from 'react';
 import { Input, Button, List } from 'antd';
 
-function TodoItemUI(props) {
+function TodoItemUI({ inputValue, handleChange, handleClick, list, handleDelete }) {
   return (
     <Fragment >
       <Input
         style={{ width: '300px', marginRight: '10px' }}
-        value={props.inputValue}
-        onChange={props.handleChange}
+        value={inputValue}
+        onChange={handleChange}
       />
       <Button
         type="primary"
-        onClick={props.handleClick}
+        onClick={handleClick}
       >
         提交
       </Button>
       <List
         style={{ width: '300px' }}
         bordered
-        dataSource={props.list}
+        dataSource={list}
         renderItem={(item, index) => (
-          <List.Item onClick={() => props.handleDelete(index)}>
+          <List.Item onClick={() => handleDelete(index)}>
             {item}
           </List.Item>
         )}

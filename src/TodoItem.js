@@ -19,6 +19,7 @@ class TodoItems extends Component {
     onDelete(index)
   }
 }
+
 TodoItems.propTypes = {
   index: PropTypes.number,
   content: PropTypes.string,
