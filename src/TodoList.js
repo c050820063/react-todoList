@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
-import TodoItemUI from './TodoItemUI'
-// import store from './store'
-import { connect } from 'react-redux'
-// import axios from 'axios'
-import { getInputChangeAction, getAddItemAction, getDeleteItemAction, getInitTodoListAction } from './store/actionCreator'
+import React from 'react';
+import TodoItemUI from './TodoItemUI';
+import { connect } from 'react-redux';
+import { getInputChangeAction, getAddItemAction, getDeleteItemAction } from './store/actionCreator';
 
 // class TodoList extends Component {
 //   constructor(props) {
