@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react';
 import { Input, Button, List } from 'antd';
+// import style from './todoItem.css';
 
 function TodoItemUI({ inputValue, handleChange, handleClick, list, handleDelete }) {
   return (
-    <Fragment >
+    <Fragment>
       <Input
         style={{ width: '300px', marginRight: '10px' }}
         value={inputValue}
